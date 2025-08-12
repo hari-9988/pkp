@@ -61,4 +61,95 @@
       margin-top: 20px;
       font-size: 1.5rem;
       font-weight: bold;
-      color:
+      color: #ffcc00;
+    }
+    .benefits {
+      background: rgba(0,0,0,0.7);
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .benefits h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #ffcc00;
+    }
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .benefits li {
+      margin: 10px 0;
+    }
+    footer {
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="GaneshLogo.png" alt="PKP Brand Logo">
+  <h1>PKP Brand</h1>
+</header>
+
+<section class="hero">
+  <h2>Win Big with Accurate Cricket Predictions</h2>
+  <p>Join now before today's match starts! Limited spots available.</p>
+  <a href="https://t.me/+3BXPMsOEhVA3ZDQx" class="cta-btn">Join on Telegram</a>
+
+  <div class="countdown" id="countdown">
+    Offer Ends In: 00:00:00
+  </div>
+</section>
+
+<section class="benefits">
+  <h3>Why Choose PKP Brand?</h3>
+  <ul>
+    <li>✅ 90%+ Accuracy Rate</li>
+    <li>✅ Daily Toss & Match Predictions</li>
+    <li>✅ Safe Betting Strategies</li>
+    <li>✅ Expert Team Support 24/7</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 PKP Brand | All Rights Reserved
+</footer>
+
+<script>
+  function startCountdown(duration) {
+    let timer = duration, hours, minutes, seconds;
+    setInterval(function () {
+      hours = parseInt(timer / 3600, 10);
+      minutes = parseInt((timer % 3600) / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      document.getElementById("countdown").textContent = `Offer Ends In: ${hours}:${minutes}:${seconds}`;
+
+      if (--timer < 0) {
+        timer = 0;
+      }
+    }, 1000);
+  }
+  startCountdown(3 * 60 * 60); // 3 hours countdown
+</script>
+
+</body>
+</html>
