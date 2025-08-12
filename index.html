@@ -1,155 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Join PKP Brand - Cricket Prediction Channel for winning tips. Limited spots only!" />
-  <title>PKP Brand - Cricket Predictions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '652013650576101');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=652013650576101&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+     <title>MONU BHAI 🏏</title>
+    <style>
+    @keyframes btnAnimation {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
     }
-    header {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      text-align: center;
+.button{
+  animation: buttonscale 2s linear infinite forwards;
+}
+@keyframes  buttonscale{
+  100%,0%{
+transform: scale(.9);
+  }50%{
+transform: scale(1.1);
+  }
+}
+
+    .tetegrambtn {
+      background: linear-gradient(60deg, #00f2ff, rgb(4, 255, 0), #ff0000);
+      background-size: 300% 300%;
+      animation: btnAnimation 5s ease infinite;
+      transition: transform 0.3s ease;
     }
-    header img {
-      height: 80px;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      color: #ffcc00;
-      font-size: 2rem;
-      margin: 0;
-    }
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: rgba(0,0,0,0.5);
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      color: #ffcc00;
-      margin-bottom: 15px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-    }
-    .cta-btn {
-      background: #ffcc00;
-      color: black;
-      padding: 15px 25px;
-      font-size: 1.3rem;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-      display: inline-block;
-    }
-    .cta-btn:hover {
-      background: #ffaa00;
-      transform: scale(1.08);
-    }
-    .countdown {
-      margin-top: 20px;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #ffcc00;
-    }
-    .benefits {
-      background: rgba(0,0,0,0.7);
-      padding: 30px 20px;
-      text-align: center;
-      animation: fadeInUp 1.5s ease-in-out;
-    }
-    .benefits h3 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #ffcc00;
-    }
-    .benefits ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-    .benefits li {
-      margin: 10px 0;
-    }
-    footer {
-      background: rgba(0,0,0,0.6);
-      padding: 15px;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    .tetegrambtn:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
-<body>
 
-<header>
-  <img src="GaneshLogo.png" alt="PKP Brand Logo">
-  <h1>PKP Brand</h1>
-</header>
-
-<section class="hero">
-  <h2>Win Big with Accurate Cricket Predictions</h2>
-  <p>Join now before today's match starts! Limited spots available.</p>
-  <a href="https://t.me/+3BXPMsOEhVA3ZDQx" class="cta-btn">Join on Telegram</a>
-
-  <div class="countdown" id="countdown">
-    Offer Ends In: 00:00:00
+<body class="bg-gray-900 font-sans antialiased">
+  <!-- Hero Section -->
+  <div class="relative h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('back.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+    <div class="relative text-center text-white max-w-2xl px-6">
+      <img src="logo.jpg" alt="Profile Image"
+        class="mx-auto w-24 h-24  border-4 border-gray-400 rounded-full shadow-lg">
+      <h1 class="mt-4 text-xl font-extrabold sm:text-5xl">MONU BHAI 🏏</h1>
+      <p class="mt-2 text-xl font-semibold text-white"> <strong class="text-4xl text-green-400" style="text-shadow: 1px 2px white;">99%</strong> <span>Right Accuracy </span> </p>
+      <!-- <div class="grid place-items-center"><div class="text-3xl rounded-full text-white font-sans w-20  h-20 grid place-items-center  text-center border-white border-4 mt-4 shadow-red-600 shadow-lg font-bold" id="countdown">30</div></div> -->
+       <div class="flex place-items-center place-content-center ">
+       <span>Hurry Up </span> <span class="text-3xl font-bold text-red-700 mx-2 " style="text-shadow: 1px 1px white; " id="countdown" > 30 </span><span> seconds left !</span>
+       </div>
+        <p class="text-sm uppercase font-bold">Tipping | Prediction | Toss | Session ✅</p>
+     <h1 class="text-center mt-3">click Telegram Button 👇 Joining Free ! </h1>
+      <div class="my-3  grid place-items-center">
+        <a href="https://t.me/+8E5mjcUgNVY1NDVl" >
+          <button
+            class="button bg-green-600 uppercase px-2 gap-4 py-4 rounded-lg flex place-items-center place-content-center text-lg font-bold text-white shadow-lg hover:scale-110 border-b-8  border-t-8 border-white" style="text-shadow: 1px 2px blue;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" class="bi bi-telegram bg-white rounded-full" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+           Subscribe MONU BHAI Telegram  Channel
+          </button>
+        </a>
+      </div>
+      <!-- <p class="text-lg mt-2 font-semibold">🎯 KING OF CRICKET TRADING 👑 🔥</p> -->
+      <div class="flex justify-between gap-2 mt-4">
+        <img src="img1.webp" alt="" class="w-16 h-16 border-2 rounded-full">
+        <img src="img3.avif" alt="" class="w-16 h-16 border-2 rounded-full">
+        <img src="img2.jpg" alt="" class="w-16 h-16 border-2 rounded-full">
+        <img src="img4.jpg" alt="" class="w-16 h-16 border-2 rounded-full">
+            </div>
+      <div class="mt-4 space-y-2">
+         <div class=" flex gap-3">
+           <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2">BBL 44/42 Pass </p>
+           <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> IPL 72/70 Pass </p>
+        <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> PSL 58/57 Pass </p>
+        <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> 100ball 44/42 Pass </p>
+      </div>
+        <p class="text-sm uppercase font-semibold">💰 India Ka No.1 Batting and Prediction King 👑 💰</p>
+       
+      </div>
+      <!-- <div class="mt-6 bg-white text-red-600 px-4 py-2 rounded-lg font-bold uppercase">
+        ✅ Juldi JOIN Karo Joining Free For Limited Time 
+      </div> -->
+    </div>
   </div>
-</section>
+  <script>
+    let timeLeft = 30; // Countdown start value
+    const countdownElement = document.getElementById('countdown');
 
-<section class="benefits">
-  <h3>Why Choose PKP Brand?</h3>
-  <ul>
-    <li>✅ 90%+ Accuracy Rate</li>
-    <li>✅ Daily Toss & Match Predictions</li>
-    <li>✅ Safe Betting Strategies</li>
-    <li>✅ Expert Team Support 24/7</li>
-  </ul>
-</section>
+    const countdownTimer = setInterval(() => {
+        countdownElement.textContent = timeLeft; // Update the display
+        timeLeft -= 1;
 
-<footer>
-  © 2025 PKP Brand | All Rights Reserved
-</footer>
-
-<script>
-  function startCountdown(duration) {
-    let timer = duration, hours, minutes, seconds;
-    setInterval(function () {
-      hours = parseInt(timer / 3600, 10);
-      minutes = parseInt((timer % 3600) / 60, 10);
-      seconds = parseInt(timer % 60, 10);
-
-      hours = hours < 10 ? "0" + hours : hours;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      document.getElementById("countdown").textContent = `Offer Ends In: ${hours}:${minutes}:${seconds}`;
-
-      if (--timer < 0) {
-        timer = 0;
-      }
-    }, 1000);
-  }
-  startCountdown(3 * 60 * 60); // 3 hours countdown
+        if (timeLeft < 0) {
+          timeLeft = 30;
+        }
+    }, 1000); // Update every 1 second
 </script>
-
 </body>
+
 </html>
