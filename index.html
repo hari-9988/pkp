@@ -1,7 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Join Channel</title>
+<style>
+  :root {
+    --accent: #2aabee;
+    --card-bg: #111;
+    --muted: #bfbfbf;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
 
-<head><!-- Meta Pixel Code -->
+  /* Background – Telegram doodle image */
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:70px 15px 20px;
+    background: url("a04cfb781dae03e258248e4e08aa62c1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color:#fff;
+  }
+
+  /* Top header */
+  .tg_header{
+    position:fixed;top:0;left:0;right:0;height:56px;
+    display:flex;align-items:center;justify-content:space-between;
+    background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);
+    padding:0 16px;z-index:10
+  }
+  .tg_header .brand{display:flex;align-items:center;font-weight:700;font-size:18px;gap:10px}
+  .tg_header .brand img{width:28px;height:28px}
+  .tg_header .dl{background:#fff;color:#2aabee;font-weight:700;text-decoration:none;
+                 padding:8px 14px;border-radius:18px}
+
+  /* Card */
+  .card{
+    background:var(--card-bg);
+    border-radius:18px;
+    padding:28px 20px 30px;
+    text-align:center;
+    width:340px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.65);
+    position:relative;
+  }
+
+  /* Avatar */
+  .avatar{
+    width:110px;height:110px;border-radius:50%;
+    margin:-80px auto 12px;display:block;object-fit:cover;
+    border:4px solid #2aabee;
+    box-shadow:0 0 12px rgba(42,171,238,0.7);
+  }
+
+  .title{font-size:20px;font-weight:800;margin:4px 0}
+  .subs{color:var(--muted);font-size:15px;margin:6px 0}
+  .username{color:#4da6ff;font-weight:700;margin:6px 0}
+  .desc{color:#e3e3e3;font-size:14px;line-height:1.4;margin:10px 0 16px}
+
+  /* Timer */
+  .timer{font-size:16px;font-weight:800;color:#ffcc00;margin-bottom:16px}
+
+  /* Button – continuous pump + rounded */
+  .join-btn{
+    display:inline-block;
+    padding:12px 36px;
+    background:var(--accent);
+    color:#fff;font-weight:800;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:16px;
+    box-shadow:0 6px 18px rgba(42,171,238,0.25);
+    animation:pump 1.6s infinite ease-in-out;
+  }
+  @keyframes pump{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+  }
+
+  .invite{color:#aaa;font-size:13px;margin-top:14px}
+  
+</style>
+ <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,121 +94,43 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2028436877650248');
+fbq('init', '1123591609539490');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2028436877650248&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1123591609539490&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdn.tailwindcss.com"></script>
-     <title>PKP BRAND 🏏</title>
-    <style>
-    @keyframes btnAnimation {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-.button{
-  animation: buttonscale 2s linear infinite forwards;
-}
-@keyframes  buttonscale{
-  100%,0%{
-transform: scale(.9);
-  }50%{
-transform: scale(1.1);
-  }
-}
-
-    .tetegrambtn {
-      background: linear-gradient(60deg, #00f2ff, rgb(4, 255, 0), #ff0000);
-      background-size: 300% 300%;
-      animation: btnAnimation 5s ease infinite;
-      transition: transform 0.3s ease;
-    }
-
-    .tetegrambtn:hover {
-      transform: scale(1.2);
-    }
-  </style>
 </head>
+<body>
 
-<body class="bg-gray-900 font-sans antialiased">
-  <!-- Hero Section -->
-  <div class="relative h-screen flex items-center justify-center bg-cover bg-center"
-    style="background-image: url('back.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-80"></div>
-    <div class="relative text-center text-white max-w-2xl px-6">
-      <img src="logo.jpg" alt="Profile Image"
-        class="mx-auto w-24 h-24  border-4 border-gray-400 rounded-full shadow-lg">
-      <h1 class="mt-4 text-xl font-extrabold sm:text-5xl">PKP BRAND🏏</h1>
-      <p class="mt-2 text-xl font-semibold text-white"> <strong class="text-4xl text-green-400" style="text-shadow: 1px 2px white;">99%</strong> <span>Right Accuracy </span> </p>
-      <!-- <div class="grid place-items-center"><div class="text-3xl rounded-full text-white font-sans w-20  h-20 grid place-items-center  text-center border-white border-4 mt-4 shadow-red-600 shadow-lg font-bold" id="countdown">30</div></div> -->
-       <div class="flex place-items-center place-content-center ">
-       <span>Hurry Up </span> <span class="text-3xl font-bold text-red-700 mx-2 " style="text-shadow: 1px 1px white; " id="countdown" > 30 </span><span> seconds left !</span>
-       </div>
-        <p class="text-sm uppercase font-bold">Tipping | Prediction | Toss | Session ✅</p>
-     <h1 class="text-center mt-3">click Telegram Button 👇 Joining Free ! </h1>
-      <div class="my-3  grid place-items-center">
-        <a href="https://telegram.dog/+3BXPMsOEhVA3ZDQx" >
-          <button
-            class="button bg-green-600 uppercase px-2 gap-4 py-4 rounded-lg flex place-items-center place-content-center text-lg font-bold text-white shadow-lg hover:scale-110 border-b-8  border-t-8 border-white" style="text-shadow: 1px 2px blue;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="blue" class="bi bi-telegram bg-white rounded-full" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-            </svg>
-           Subscribe PKP BRAND Telegram  Channel
-          </button>
-        </a>
-      </div>
-      <!-- <p class="text-lg mt-2 font-semibold">🎯 KING OF CRICKET TRADING 👑 🔥</p> -->
-      <div class="flex justify-between gap-2 mt-4">
-        <img src="img1.webp" alt="" class="w-16 h-16 border-2 rounded-full">
-        <img src="img2.jpg" alt="" class="w-16 h-16 border-2 rounded-full">
-        <img src="img3.avif" alt="" class="w-16 h-16 border-2 rounded-full">
-        <img src="img4.jpg" alt="" class="w-16 h-16 border-2 rounded-full">
-            </div>
-      <div class="mt-4 space-y-2">
-         <div class=" flex gap-3">
-           <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2">BBL 44/42 Pass </p>
-           <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> IPL 72/70 Pass </p>
-        <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> PSL 58/57 Pass </p>
-        <p class="text-lg font-semibold bg-blue-200 text-yellow-700 px-2"> 100ball 44/42 Pass </p>
-      </div>
-        <p class="text-sm uppercase font-semibold">💰 India Ka No.1 Batting and Prediction King 👑 💰</p>
-       
-      </div>
-      <!-- <div class="mt-6 bg-white text-red-600 px-4 py-2 rounded-lg font-bold uppercase">
-        ✅ Juldi JOIN Karo Joining Free For Limited Time 
-      </div> -->
+  <div class="tg_header">
+    <div class="brand" onclick="redirect()" style="cursor:pointer">
+      <img src="https://telegram.org/img/t_logo.png" alt="tg"> Telegram
     </div>
+    <a class="https://telegram.dog/+3BXPMsOEhVA3ZDQx">Download</a>
   </div>
-  <script>
-    let timeLeft = 30; // Countdown start value
-    const countdownElement = document.getElementById('countdown');
 
-    const countdownTimer = setInterval(() => {
-        countdownElement.textContent = timeLeft; // Update the display
-        timeLeft -= 1;
+  <div class="card">
+    <img class="avatar" src="12.jpg" alt="avatar" />
+    <div class="title">PUNTER KI PANCHAYAT 2.0 ™</div>
+    <div class="subs">42 023 subscribers</div>
+    <div class="username">@PKPBRANDPKP</div>
+    <div class="desc">Currently India's No 1 Cricket Anaylst... 🔥 With Over 3 Million Follower Globally.</div>
+    <div class="timer" id="timer">Time left: 60 seconds</div>
+    <a href="https://telegram.dog/+3BXPMsOEhVA3ZDQx" class="join-btn" id="joinBtn">Join Channel</a>
+    <div class="invite">You are invited to the channel <strong>PUNTER KI PANCHAYAT 2.0 ™</strong>. Click above to join.</div>
+  </div>
 
-        if (timeLeft < 0) {
-          timeLeft = 30;
-        }
-    }, 1000); // Update every 1 second
+<script>
+function redirect(){window.location.href=document.getElementById('joinBtn').href;}
+let t=60,el=document.getElementById('timer');
+(function tick(){
+  el.textContent="Time left: "+t+" seconds";
+  if(t<=0){window.location.href=document.getElementById('joinBtn').href;}
+  else{t--;setTimeout(tick,1000);}
+})();
 </script>
+
 </body>
-
 </html>
-
-
-
-
